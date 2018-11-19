@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html dir="ltr" data-ember-extension="1" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Ibragim Mamadaev</title>
+    
+    <meta name="description" content="Ibragim">
+    <meta name="keywords" content="Ibragim, junior iOS-developer, Russia, Moscow">
+    <meta name="author" content="Ibragim">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2e2d2b">
+    <link rel="stylesheet" href="./files/style.css" type="text/css" media="screen">
+
+    <script async="" src="./files/analytics.js"></script><script async="" src="./files/analytics(1).js"></script>
+</head>
+<body>
+
+<div class="background">
+    <div id="particles" style="position: relative;"><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; z-index: 1; background: url(&quot;background.jpg&quot;) center center / cover no-repeat;"></div><canvas width="1440" height="658" style="z-index: 20; position: relative;"></canvas></div>
+</div>
+<main class="container">
+    <section class="content">
+        <div class="name" googl="true">Ibragim</div>
+        <p class="description">
+            <span class="desktop-hidden" id="desc_mobile">iOS-Developer from Moscow</span>
+            <span class="mobile-hidden" id="desc_desktop">iOS-Developer</span>
+        </p>
+        <a class="email" href="mailto:ahtubcex@bk.ru" title="Email to Ibragim">Contact</a>
+    </section>
+</main>
+
+<footer class="footer">
+    <a class="social gh" href="https://github.com/ahtubcex" title="Ibragim on GitHub" target="_blank"></a>
+    <!--<a class="social tw" href="https://www.twitter.com/ahtubcex" title="Ibragim on Twittern" target="_blank"></a>-->
+    <a class="social fb" href="https://www.facebook.com/" title="Ibragim on Facebook" target="_blank"></a>
+    <a class="social ig" href="https://www.instagram.com/1br4g1m" title="Ibragim on Instagram" target="_blank"></a>
+    <a class="social vk" href="https://vk.com/ahtubcex" title="Ibragim on VK" target="_blank"></a>
+
+</footer>
+
+<script src="./files/particles.js"></script>
+<script>
+  var showText = function(target, message, index, interval) {
+    if (index < message.length) {
+      document.querySelector(target).innerHTML += message[index++];
+      setTimeout(function() {
+        showText(target, message, index, interval);
+      }, interval);
+    }
+  };
+  showText('#desc_desktop', 'iOS-Developer', 0, 80);
+  showText('#desc_mobile', 'iOS-developer from Moscow', 0, 80);
+
+  // Initialisation
+
+  var canvasDiv = document.getElementById('particles');
+  var options = {
+    particleColor: '#727272',
+    background: 'background.jpg',
+    interactive: false,
+    speed: 'fast',
+    density: 5000,
+  };
+  var particleCanvas = new ParticleNetwork(canvasDiv, options);
+
+  var getLabel = function(target) {
+    return target.innerHTML || target.title || target.name || target.query;
+  };
+
+  document.querySelectorAll('a').forEach(function(elem) {
+    elem.addEventListener('mouseenter', function(e) {
+      var label = getLabel(e.target);
+      if (label) {
+        trackAction('mouseenter', label);
+      }
+    });
+
+    elem.addEventListener('click', function(e) {
+      var label = getLabel(e.target);
+      if (label) {
+        trackAction('click', label);
+      }
+    });
+  });
+</script>
+
+
+</body></html>

@@ -1,89 +1,118 @@
-
 <!DOCTYPE html>
-<html dir="ltr" data-ember-extension="1" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>Ibragim Mamadaev</title>
-    
-    <meta name="description" content="Ibragim">
-    <meta name="keywords" content="Ibragim, junior iOS-developer, Russia, Moscow">
-    <meta name="author" content="Ibragim">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#2e2d2b">
-    <link rel="stylesheet" href="./files/style.css" type="text/css" media="screen">
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Nick Aroot</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <script async="" src="./files/analytics.js"></script><script async="" src="./files/analytics(1).js"></script>
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
+
 <body>
+  <div class="wrapper">
+    <video id="video" class="bg-video" loop autoplay autobuffer muted>
+      <source src="timelapse.mp4" type="video/mp4">
+    </video>
+  </div>
 
-<div class="background">
-    <div id="particles" style="position: relative;"><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; z-index: 1; background: url(&quot;background.jpg&quot;) center center / cover no-repeat;"></div><canvas width="1440" height="658" style="z-index: 20; position: relative;"></canvas></div>
-</div>
-<main class="container">
-    <section class="content">
-        <div class="name" googl="true">Ibragim</div>
-        <p class="description">
-            <span class="desktop-hidden" id="desc_mobile">iOS-Developer from Moscow</span>
-            <span class="mobile-hidden" id="desc_desktop">iOS-Developer</span>
-        </p>
-        <a class="email" href="mailto:ahtubcex@bk.ru" title="Email to Ibragim">Contact</a>
-    </section>
-</main>
+  <div id="large-header" class="large-header">
+    <canvas id="demo-canvas"></canvas>
+  </div>
+  <div class="text-wrapper">
+    <h1 class="main-title">Nick <span class="thin">Aroot</span></h1>
+    <p class="sub-title">Choose Your Way.&nbsp;&nbsp;&nbsp;Trust In The Future.</p>
+    <div class="socials">
+      <a href="https://vk.com/nickaroot" target="_blank" class="icon vk" id="vk">
+        <svg  preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
+          <circle cx="100" cy="100" r="50"/>
+        </svg>
+        <img src="img/vk.svg">
+      </a>
+      <a href="https://fb.com/nickaroot" target="_blank" class="icon facebook" id="facebook">
+        <svg  preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
+          <circle cx="100" cy="100" r="50"/>
+        </svg>
+        <img src="img/facebook.svg">
+      </a>
+      <a href="https://telegram.me/nickaroot" target="_blank" class="icon telegram" id="telegram">
+        <svg  preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
+          <circle cx="100" cy="100" r="50"/>
+        </svg>
+        <img src="img/telegram.svg">
+      </a>
+      <a href="https://instagram.com/nickaroot" target="_blank" class="icon instagram" id="instagram">
+        <svg  preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
+          <circle cx="100" cy="100" r="50"/>
+        </svg>
+        <img src="img/instagram-logo.svg">
+      </a>
+      <a href="https://github.com/nickaroot" target="_blank" class="icon github" id="github">
+        <svg  preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
+          <circle cx="100" cy="100" r="50"/>
+        </svg>
+        <img src="img/github-logo.svg">
+      </a>
+      <a href="mailto:nickaroot@icloud.com" target="_blank" class="icon email" id="email">
+        <svg  preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
+          <circle cx="100" cy="100" r="50"/>
+        </svg>
+        <img src="img/email.svg">
+      </a>
+    </div>
+  </div>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
 
-<footer class="footer">
-    <a class="social gh" href="https://github.com/ahtubcex" title="Ibragim on GitHub" target="_blank"></a>
-    <!--<a class="social tw" href="https://www.twitter.com/ahtubcex" title="Ibragim on Twittern" target="_blank"></a>-->
-    <a class="social fb" href="https://www.facebook.com/simon.raily" title="Ibragim on Facebook" target="_blank"></a>
-    <a class="social ig" href="https://www.instagram.com/1br4g1m" title="Ibragim on Instagram" target="_blank"></a>
-    <a class="social vk" href="https://vk.com/ahtubcex" title="Ibragim on VK" target="_blank"></a>
+  <script type="text/javascript">
+    var red = 255;
+    var green = 255;
+    var blue = 255;
 
-</footer>
+    document.getElementById("vk").addEventListener("mouseenter", function(e){
+      red = 69;
+      green = 102;
+      blue = 142;
+    }, true);
 
-<script src="./files/particles.js"></script>
-<script>
-  var showText = function(target, message, index, interval) {
-    if (index < message.length) {
-      document.querySelector(target).innerHTML += message[index++];
-      setTimeout(function() {
-        showText(target, message, index, interval);
-      }, interval);
-    }
-  };
-  showText('#desc_desktop', 'iOS-Developer', 0, 80);
-  showText('#desc_mobile', 'iOS-developer from Moscow', 0, 80);
+    document.getElementById("facebook").addEventListener("mouseenter", function(e){
+      red = 59;
+      green = 89;
+      blue = 152;
+    }, true);
 
-  // Initialisation
+    document.getElementById("telegram").addEventListener("mouseenter", function(e){
+      red = 0;
+      green = 136;
+      blue = 204;
+    }, true);
 
-  var canvasDiv = document.getElementById('particles');
-  var options = {
-    particleColor: '#727272',
-    background: 'background.jpg',
-    interactive: false,
-    speed: 'fast',
-    density: 5000,
-  };
-  var particleCanvas = new ParticleNetwork(canvasDiv, options);
+    document.getElementById("github").addEventListener("mouseenter", function(e){
+      red = 201;
+      green = 81;
+      blue = 12;
+    }, true);
 
-  var getLabel = function(target) {
-    return target.innerHTML || target.title || target.name || target.query;
-  };
+    document.getElementById("instagram").addEventListener("mouseenter", function(e){
+      red = 193;
+      green = 53;
+      blue = 132;
+    }, true);
 
-  document.querySelectorAll('a').forEach(function(elem) {
-    elem.addEventListener('mouseenter', function(e) {
-      var label = getLabel(e.target);
-      if (label) {
-        trackAction('mouseenter', label);
-      }
-    });
+    document.getElementById("email").addEventListener("mouseenter", function(e){
+      red = 138;
+      green = 144;
+      blue = 199;
+    }, true);
+  </script>
 
-    elem.addEventListener('click', function(e) {
-      var label = getLabel(e.target);
-      if (label) {
-        trackAction('click', label);
-      }
-    });
-  });
-</script>
+    <script  src="js/index.js"></script>
 
 
-</body></html>
+
+</body>
+
+</html>

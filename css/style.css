@@ -154,6 +154,14 @@
           animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorEmail 1s linear forwards;
 }
 
+video{
+   position:fixed;
+   z-index:-1;
+   min-width:100%;
+   min-height:100%;
+   overflow:hidden;
+}
+
 .main-title .thin {
   font-weight: 200;
 }

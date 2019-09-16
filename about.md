@@ -3,8 +3,8 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-#### Introduce yourself here... so people will know who you are and what you do.. blah..blah..blah..
+#### My CV:
+ One day here will be posted link to download my CV
 #### My social networks:
 * [LinkedIn](https://www.linkedin.com/in/ibragim-mamadaev-393ba9182/ "Banned in Russia")
 * [Twitter](http://twitter.com/ibragimBMSTU)

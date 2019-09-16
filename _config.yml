@@ -1,6 +1,6 @@
 # Site settings
-title_left    : "myBlog"
-# title_right   : "space" # default: ""
+# title_left    : "myBlog"
+title_right   : "myBlog" # default: ""
 description   : "Ibragim"
 keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
 url           : https://mamadaev.github.io # site url
